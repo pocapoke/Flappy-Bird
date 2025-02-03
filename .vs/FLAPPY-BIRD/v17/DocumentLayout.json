@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pocat\\OneDrive\\Documents\\GitHub\\Flappy-Bird\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B369E545-66C2-4248-B53A-B4B82602DE9E}|Flappy-bird.csproj|c:\\users\\pocat\\onedrive\\documents\\github\\flappy-bird\\scenes\\tap-to-begin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B369E545-66C2-4248-B53A-B4B82602DE9E}|Flappy-bird.csproj|solutionrelative:scenes\\tap-to-begin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Tap-to-begin.cs",
+              "DocumentMoniker": "C:\\Users\\pocat\\OneDrive\\Documents\\GitHub\\Flappy-Bird\\Scenes\\Tap-to-begin.cs",
+              "RelativeDocumentMoniker": "Scenes\\Tap-to-begin.cs",
+              "ToolTip": "C:\\Users\\pocat\\OneDrive\\Documents\\GitHub\\Flappy-Bird\\Scenes\\Tap-to-begin.cs",
+              "RelativeToolTip": "Scenes\\Tap-to-begin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T10:10:04.561Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

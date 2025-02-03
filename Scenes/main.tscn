@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://byy5yab6bxm2k"]
+
+[ext_resource type="FontFile" uid="uid://dp78iadt4knti" path="res://Assets/joystix monospace.otf" id="1_5kf6v"]
+[ext_resource type="Script" path="res://Scenes/Tap-to-begin.cs" id="2_up27r"]
+[ext_resource type="PackedScene" uid="uid://co1o2pqtpoboi" path="res://Scenes/pipe.tscn" id="3_socn7"]
+[ext_resource type="Texture2D" uid="uid://dbmvul65lyi7e" path="res://Assets/Background/Background2.png" id="4_6q21p"]
+
+[node name="main" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = -113.0
+offset_right = 16.0
+offset_bottom = -73.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Tap to begin" type="Label" parent="CanvasLayer/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -224.5
+offset_top = -30.0
+offset_right = 224.5
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_5kf6v")
+theme_override_font_sizes/font_size = 50
+text = "TAP TO FLAP"
+script = ExtResource("2_up27r")
+
+[node name="pipe" parent="." instance=ExtResource("3_socn7")]
+position = Vector2(533, 302)
+scale = Vector2(3, 3)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer1" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer1"]
+texture_filter = 3
+position = Vector2(276, 0)
+scale = Vector2(6.34375, 6.34375)
+texture = ExtResource("4_6q21p")
