@@ -3,55 +3,55 @@ using System;
 
 public partial class Bird : CharacterBody2D
 {
-	//public const float Speed = 300.0f;
-	public const float JumpVelocity = -400.0f;
-	private AnimationPlayer _fly;
-	public bool flying = false;
-	public bool falling = false;
-		
-	public override void _Ready()
+	[Export] float Speed = 300.0f;
+    [Export] float jumpVelocity = -400.0f;
+	private bool crashed = false;
+	public bool falling;
+
+	public Vector2 flap = new Vector2();
+
+    private AnimationPlayer _fly;
+
+    public override void _Ready()
 	{
 		_fly = GetNode<AnimationPlayer>("FLY!");
-		Reset();
+	}
+
+	public override void _PhysicsProcess(double delta)
+	{
+		if (crashed) return;
+
+		{	flap = Velocity;
+			// Add the gravity.
+			if (!IsOnFloor())
+			{
+				flap += GetGravity() * (float)delta;
+			}
+
+			// Handle Jump.
+			if (Input.IsActionJustPressed("flap"))
+			{
+				Flap();
+			}
+			Velocity = flap;
+			MoveAndSlide();
+		}
 	}
 
 	public void Reset()
 	{
-		falling = false;
-		flying = false;
+		//flying = false;
 	}
-	public override void _PhysicsProcess(double delta)
+
+	public void StopBird()
 	{
-		Vector2 velocity = Velocity;
-		
-		// Add the gravity.
-		if (!IsOnFloor())
-		{
-			velocity += GetGravity() * (float)delta;
-		}
-
-		// Handle Jump.
-        if (Input.IsActionJustPressed("flap"))
-        {
-                velocity.Y = JumpVelocity;
-                _fly.Play("fly");
-        }
-
-        /*
-		// Get the input direction and handle the movement/deceleration.
-		// As good practice, you should replace UI actions with custom gameplay actions.
-		Vector2 direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
-		if (direction != Vector2.Zero)
-		{
-			velocity.X = direction.X * Speed;
-		}
-		else
-		{
-			velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
-		}
-		*/
-
-        Velocity = velocity;
-		MoveAndSlide();
+		crashed = true;
 	}
+
+	public void Flap()
+	{
+		if (crashed) return;
+		flap.Y = jumpVelocity;
+		_fly.Play("fly");
+    }
 }

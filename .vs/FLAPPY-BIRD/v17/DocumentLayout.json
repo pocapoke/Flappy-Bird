@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\pocat\\OneDrive\\Documents\\GitHub\\Flappy-Bird\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B369E545-66C2-4248-B53A-B4B82602DE9E}|Flappy-bird.csproj|c:\\users\\pocat\\onedrive\\documents\\github\\flappy-bird\\scenes\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B369E545-66C2-4248-B53A-B4B82602DE9E}|Flappy-bird.csproj|solutionrelative:scenes\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B369E545-66C2-4248-B53A-B4B82602DE9E}|Flappy-bird.csproj|c:\\users\\pocat\\onedrive\\documents\\github\\flappy-bird\\scenes\\ground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B369E545-66C2-4248-B53A-B4B82602DE9E}|Flappy-bird.csproj|solutionrelative:scenes\\ground.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pocat\\OneDrive\\Documents\\GitHub\\Flappy-Bird\\Scenes\\Pipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scenes\\Pipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B369E545-66C2-4248-B53A-B4B82602DE9E}|Flappy-bird.csproj|c:\\users\\pocat\\onedrive\\documents\\github\\flappy-bird\\scenes\\bird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B369E545-66C2-4248-B53A-B4B82602DE9E}|Flappy-bird.csproj|solutionrelative:scenes\\bird.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B369E545-66C2-4248-B53A-B4B82602DE9E}|Flappy-bird.csproj|c:\\users\\pocat\\onedrive\\documents\\github\\flappy-bird\\scenes\\pipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B369E545-66C2-4248-B53A-B4B82602DE9E}|Flappy-bird.csproj|solutionrelative:scenes\\pipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B369E545-66C2-4248-B53A-B4B82602DE9E}|Flappy-bird.csproj|c:\\users\\pocat\\onedrive\\documents\\github\\flappy-bird\\scenes\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B369E545-66C2-4248-B53A-B4B82602DE9E}|Flappy-bird.csproj|solutionrelative:scenes\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -43,39 +43,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Ground.cs",
               "DocumentMoniker": "C:\\Users\\pocat\\OneDrive\\Documents\\GitHub\\Flappy-Bird\\Scenes\\Ground.cs",
               "RelativeDocumentMoniker": "Scenes\\Ground.cs",
               "ToolTip": "C:\\Users\\pocat\\OneDrive\\Documents\\GitHub\\Flappy-Bird\\Scenes\\Ground.cs",
               "RelativeToolTip": "Scenes\\Ground.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-07T10:36:43.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Main.cs",
               "DocumentMoniker": "C:\\Users\\pocat\\OneDrive\\Documents\\GitHub\\Flappy-Bird\\Scenes\\Main.cs",
               "RelativeDocumentMoniker": "Scenes\\Main.cs",
               "ToolTip": "C:\\Users\\pocat\\OneDrive\\Documents\\GitHub\\Flappy-Bird\\Scenes\\Main.cs",
               "RelativeToolTip": "Scenes\\Main.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-07T09:17:57.145Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Bird.cs",
               "DocumentMoniker": "C:\\Users\\pocat\\OneDrive\\Documents\\GitHub\\Flappy-Bird\\Scenes\\Bird.cs",
               "RelativeDocumentMoniker": "Scenes\\Bird.cs",
               "ToolTip": "C:\\Users\\pocat\\OneDrive\\Documents\\GitHub\\Flappy-Bird\\Scenes\\Bird.cs",
               "RelativeToolTip": "Scenes\\Bird.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwC4AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-07T08:18:58.604Z",
               "EditorCaption": ""

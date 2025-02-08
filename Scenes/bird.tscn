@@ -1,0 +1,68 @@
+[gd_scene load_steps=7 format=3 uid="uid://dvbtk1h4ukjb"]
+
+[ext_resource type="Script" path="res://Scenes/Bird.cs" id="1_uxmq0"]
+[ext_resource type="Texture2D" uid="uid://cb1u5slvox0io" path="res://Assets/Player/StyleBird1/Bird1-7.png" id="2_1nt3r"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dyuna"]
+radius = 24.0
+height = 66.0
+
+[sub_resource type="Animation" id="Animation_eka6d"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_gfvg3"]
+resource_name = "fly"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hhsy2"]
+_data = {
+"RESET": SubResource("Animation_eka6d"),
+"fly": SubResource("Animation_gfvg3")
+}
+
+[node name="Bird" type="CharacterBody2D"]
+position = Vector2(155, 253)
+collision_mask = 3
+script = ExtResource("1_uxmq0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("2_1nt3r")
+hframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_dyuna")
+
+[node name="FLY!" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_hhsy2")
+}
+
+[connection signal="ready" from="FLY!" to="." method="_on_fly_ready"]
